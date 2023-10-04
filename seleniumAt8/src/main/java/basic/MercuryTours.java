@@ -7,17 +7,17 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class MercuryTours {
 
 	public static void main(String[] args) {
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("https://selenium.obsqurazone.com/radio-button-demo.php");
-		List<WebElement> gender=driver.findElements(By.name("inlineRadioOptions"));
-		gender.get(0).click();
-		boolean f=gender.get(0).isSelected();
+		List<WebElement> genderRadio=driver.findElements(By.name("inlineRadioOptions"));
+		genderRadio.get(0).click();
+		boolean f=genderRadio.get(0).isSelected();
 		System.out.println(f);
 		WebElement showSelectedButton = driver.findElement(By.id("button-one"));
 		showSelectedButton.click();

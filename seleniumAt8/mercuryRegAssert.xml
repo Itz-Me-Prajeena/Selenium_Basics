@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	  <parameter name="fName" value="testF"></parameter>
+	  <parameter name="lName" value="testL"></parameter>
+	  <parameter name="phNum" value="123456"></parameter>
+	  <parameter name="emailID" value="testEmail"></parameter>
+	  <parameter name="addrs" value="testAddrs"></parameter>
+	  <parameter name="cityName" value="testCity"></parameter>
+	  <parameter name="stateName" value="testState"></parameter>
+	  <parameter name="poCode" value="123456"></parameter>
+	  <parameter name="user" value="tutorial"></parameter>
+	  <parameter name="passwrd" value="tutorial"></parameter>
+	  <parameter name="confirmPasswrd" value="tutorial"></parameter>
+    <classes>
+      <class name="seleniumTestNG.MercuryRegistrationAssert"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
